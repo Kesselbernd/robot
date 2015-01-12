@@ -2,7 +2,7 @@
 
 import RPi.GPIO as GPIO
 import time
-#import random
+import random
 
 GPIO.setmode(GPIO.BCM)
 
