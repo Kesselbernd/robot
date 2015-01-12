@@ -2,3 +2,6 @@
 
 import RPi.GPIO as GPIO
 import time
+
+class TempSensor(object):
+    pass
