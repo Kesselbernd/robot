@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-import RPi.GPIO as GPIO
-import time
-import random
+#import RPi.GPIO as GPIO
+#import time
+#import random
 from sensor import *
 from led import *
 
