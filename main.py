@@ -2,7 +2,7 @@
 
 #import RPi.GPIO as GPIO
 #import time
-#import sys
+#import sysl
 from robot import *
 #from sensor import *
 from led import *

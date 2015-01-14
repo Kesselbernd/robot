@@ -8,7 +8,7 @@ GPIO.setmode(GPIO.BCM)
 #Motor 1 uses 17 and 18
 #Motor 2 uses 22 and 23
 
-class rtk(object):
+class RTK(object):
     def __init__(self, gpio_pin1, gpio_pin2):
         self.__GPIO_PIN1 = gpio_pin1
         self.__GPIO_PIN2 = gpio_pin2

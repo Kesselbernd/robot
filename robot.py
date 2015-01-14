@@ -5,6 +5,7 @@
 #import random
 from sensor import *
 from led import *
+from rtk import *
 
 GPIO.setmode(GPIO.BCM)
 
@@ -12,8 +13,10 @@ class Robot(object):
     def __init__(self, gpio_trigger, gpio_echo, sicherheitsabstand):
         self.sensor = Sensor(gpio_trigger, gpio_echo)
         self.__sicherheitsabstand = sicherheitsabstand
-        self.blinker_links = LED(22)
-        self.blinker_rechts = LED(17)
+        self.blinker_links = LED(29)
+        self.blinker_rechts = LED(30)
+        self.__motor_rechts = RTK(17, 18)
+        self.__motor_links = RTK(22, 23)
 
     def __lt__(self): #gibt True oder False zurück
         return self.sensor.distanz() < self.__sicherheitsabstand
