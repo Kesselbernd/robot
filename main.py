@@ -2,17 +2,17 @@
 
 #import RPi.GPIO as GPIO
 #import time
-#import sysl
+#import sys
 from robot import *
 #from sensor import *
 from led import *
 
 #Merkliste Verwendung GPIO
 GPIO_Pins = {
-    "led1" : 1,
-    "led2" : 1,
-    "trigger" : 1,
-    "echo" : 1,
+    "led1" : 9,
+    "led2" : 25,
+    "trigger" : 4,
+    "echo" : 14,
     "dht11" : 1,
     "motor1_pin1" : 17,
     "motor1_pin2" : 18,

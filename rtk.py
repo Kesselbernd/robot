@@ -27,6 +27,10 @@ class RTK(object):
         GPIO.output(self.__GPIO_PIN1, 1)
         time.sleep(5)
 
+    def stop(self):
+        GPIO.output(self.__GPIO_PIN1, 0)
+        GPIO.output(self.__GPIO_PIN2, 0)
+
 
 """
 ##Simple motor script for the RTK-000-001
